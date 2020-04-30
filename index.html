@@ -3,9 +3,33 @@
     <head>
         <meta charset="utf-8">
         <title>Carousel</title>
+        <script src="https://kit.fontawesome.com/34a507967b.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
+        <div class="container">
+            <div class="slider clearfix">
+                <div class="carousel-left">
+                    <i class="fas fa-2x fa-chevron-left"></i>
+                </div>
+                <div class="slide">
+                    <img class="active" src="img/london-wallpaper.jpg" alt="Londra">
+                    <img src="img/naples-wallpaper.jpg" alt="Napoli">
+                    <img src="img/paris-wallpaper.jpg" alt="Parigi">
+                    <img src="img/rome-wallpaper.jpg" alt="Roma">
+                </div>
+                <div class="carousel-right">
+                    <i class="fas fa-2x fa-chevron-right"></i>
+                </div>
+                <div class="bullets">
+                    <i class="fas fa-circle active"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                </div>
+            </div>
+        </div>
         <script src="main.js" charset="utf-8"></script>
     </body>
 </html>
