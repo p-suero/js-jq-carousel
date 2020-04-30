@@ -7,7 +7,6 @@
 .container {
     width: 70%;
     height: 100vh;
-    background-color: green;
     margin: auto;
     display: flex;
     align-items: center;
@@ -22,18 +21,22 @@
 .slider {
     height: 50%;
     width: 100%;
-    background-color: red;
 }
 
 .carousel-left, .carousel-right {
     width: 10%;
     height: 100%;
     float: left;
-    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: lightslategrey;
+    transition: color 0.5s;
+}
+
+.carousel-left:hover, .carousel-right:hover {
+    color: lightseagreen;
 }
 
 .slide {
@@ -41,7 +44,9 @@
     height: 100%;
     float: left;
     text-align: center;
-    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -49,6 +54,7 @@
     display: none;
     max-width: 100%;
     max-height: 100%;
+    object-fit: contain;
 }
 
 .slide img.active {
@@ -59,13 +65,20 @@
     float: left;
     width: 100%;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .bullets i {
+    color: lightslategrey;
+    opacity: 0.5;
     cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+.bullets i:hover {
+    opacity: 1;
 }
 
 .bullets i.active {
-    color: white;
+    color: lightseagreen;
 }
