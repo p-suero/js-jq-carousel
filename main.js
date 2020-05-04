@@ -33,7 +33,7 @@ $(".bullets i").click(function() {
 //aggiungo lo scorrimento automatico all'apertura della pagina web
 var autoplay = setInterval(next, 3000);
 
-//avvio l'autoplay al click del pulsante display
+//avvio l'autoplay al click del pulsante play
 $(".play").click(function() {
     autoplay = setInterval(next, 3000);
 
