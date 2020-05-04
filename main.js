@@ -9,9 +9,6 @@ $(".carousel-right").click(next)
 //intercetto il click sull'icona
 $(".carousel-left").click(prev)
 
-//aggiungo lo scorrimento automatico in apertura pagina web
-setInterval(next, 3000)
-
 
 //creo l'interazione al click sul singolo pallino
 $(".bullets i").click(function() {
@@ -38,6 +35,9 @@ $(".bullets i").click(function() {
     //aggiungo la classe active al pallino cliccato
     bullets_clicked.addClass("active");
 })
+
+//aggiungo lo scorrimento automatico 
+setInterval(next, 3000)
 
 //generalizzo la funzione next
 function next () {
