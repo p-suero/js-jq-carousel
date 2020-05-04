@@ -19,8 +19,14 @@
 }
 
 .slider {
-    height: 60%;
+    height: 50%;
     width: 100%;
+    position: relative;
+}
+
+.page-content {
+    width: 100%;
+    height: 100%;
 }
 
 .carousel-left, .carousel-right {
@@ -53,7 +59,6 @@
     display: none;
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
 }
 
 .slide img.active {
@@ -61,12 +66,10 @@
 }
 
 .bullets {
-    float: left;
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .bullets i {
@@ -76,10 +79,27 @@
     transition: color 0.5s;
 }
 
-.bullets i:hover {
+.bullets i:hover,
+.bullets i.active {
     color: lightseagreen;
 }
 
-.bullets i.active {
+.buttons {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.buttons div {
+    display: inline-block;
+    color: lavender;
+    font-size: 30px;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+.buttons div:hover,
+.buttons div.active {
     color: lightseagreen;
 }
