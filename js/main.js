@@ -2,11 +2,11 @@
 
 //creo l'interazione al "carousel-next"
 //intercetto il click sull'icona "carousel-right" ed utilizzo la funzione "next"
-$(".carousel-right").click(next)
+$(".carousel-right").click(next);
 
 //creo l'interazione al "carousel-prev"
 //intercetto il click sull'icona carousel-left ed utilizzo la funzione "prev"
-$(".carousel-left").click(prev)
+$(".carousel-left").click(prev);
 
 //creo l'interazione al click sul singolo pallino
 $(".bullets i").click(function() {
