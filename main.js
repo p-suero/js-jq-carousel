@@ -56,7 +56,7 @@ $(".pause, .carousel-left, .carousel-right").click(function() {
     $(".pause").addClass("active");
 })
 
-//generalizzo la funzione next
+//creo delle funzioni per evitare di ripetere codice
 function next () {
     //seleziono l'immagine che ha l'active
     var img_corrente = $("img.active");
@@ -89,7 +89,6 @@ function next () {
     }
 }
 
-//generalizzo la funzione prev
 function prev () {
     //seleziono l'immagine con la classe active
     var img_corrente = $("img.active");
